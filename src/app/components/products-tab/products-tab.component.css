@@ -1,0 +1,59 @@
+.card {
+    background-color: var(--cards-background-color);
+    /* background: var(--optional-background); */
+    position: relative;
+    width: var(--card-width);
+    height: 140px;
+
+    margin: 20px;
+    padding: 10px;
+
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.card img {
+    position: absolute;
+    right: calc(var(--card-width) / 20);
+    top: calc(-1 * var(--product-width) / 1.6);
+
+    height: var(--product-width);
+    width: auto;
+    transform: rotate(15deg);
+
+}
+
+.card p::first-line {
+    font-size: 30px;
+}
+
+.card p {
+    color: var(--text-color);
+    width: inherit;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/*  events */
+.card:hover {
+    box-shadow: 5px 5px 0 3px rgb(162, 0, 255);
+    transform: translateX(-5px) translateY(-5px);
+    /* box-shadow: 15px 15px 25px 3px rgb(209, 208, 208); */
+    cursor: pointer;
+
+    /* animation: card-animation infinite 2s ease; */
+}
+
+.card:active {
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 0 0 0 0 rgb(150, 148, 149);
+}

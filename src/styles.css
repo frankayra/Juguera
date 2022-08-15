@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+:root
+{
+    --product-width: 100px;
+    --optional-background: linear-gradient(to bottom, rgb(199, 199, 199), rgb(199, 199, 199));
+    --cards-background-color: rgb(3, 1, 26);
+    --text-color: rgb(255, 255, 255);
+    --card-width: 250px;
+}
+body
+{
+    background-color: rgba(0, 255, 242, 0.507);;
+    /* background: linear-gradient(to right, rgba(255, 251, 0, 0.096), rgba(1, 1, 1, 0.336)); */
+    overflow-x: hidden;
+}
