@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-tab.component.css']
 })
 export class ProductsTabComponent implements OnInit {
-  isActive = true;
-  constructor() { }
+  isActive: Array<boolean>;
+  constructor() { 
+    this.isActive = new Array<boolean>();
+  }
   
   ngOnInit(): void {
   }
-  switchUp(){
-    this.isActive = this.isActive;
+  switchUp(index:number){
   }
 }

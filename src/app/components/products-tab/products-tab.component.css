@@ -41,6 +41,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
+
 }
 
 /*  events */
@@ -56,4 +58,9 @@
 .card:active {
     transform: translateX(2px) translateY(2px);
     box-shadow: 0 0 0 0 rgb(150, 148, 149);
+}
+
+.selected-card
+{
+    height: 200px;
 }
