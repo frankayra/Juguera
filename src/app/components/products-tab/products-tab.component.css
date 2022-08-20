@@ -1,12 +1,12 @@
 .card {
-    background-color: var(--cards-background-color);
-    /* background: var(--optional-background); */
     position: relative;
     width: var(--card-width);
-    height: 140px;
+    /* height: var(); */
 
     margin: 20px;
     padding: 10px;
+
+    cursor: pointer;
 
     border-radius: 10px;
     transition: 0.1s;
@@ -47,20 +47,62 @@
 
 /*  events */
 .card:hover {
+    /* Option 1 */
     box-shadow: 5px 5px 0 3px rgb(162, 0, 255);
     transform: translateX(-5px) translateY(-5px);
-    /* box-shadow: 15px 15px 25px 3px rgb(209, 208, 208); */
-    cursor: pointer;
+    
+    /* Option 2 */
+    background-color: rgb(69, 69, 69);
 
-    /* animation: card-animation infinite 2s ease; */
+    /* Option 3 */
+    /* background-color: rgb(107, 65, 145); */
+
+    /* Option 4 */
+    /* background-color: rgb(41, 126, 62); */
 }
 
 .card:active {
     transform: translateX(2px) translateY(2px);
-    box-shadow: 0 0 0 0 rgb(150, 148, 149);
 }
 
 .selected-card
 {
     height: 200px;
+}
+
+
+@media (max-width: 720px)
+{
+    .card{
+        width: calc(var(--card-width) - 120px);
+        padding: 13px;
+        
+    }
+    .card p::first-line{
+        font-size: 23px;
+    }
+    .card img {
+        
+    }
+    .card p{
+        font-size: 15px;
+        
+    }
+}
+@media (min-height: 1080px) {
+    .card{
+        width: calc(var(--card-width) + 120px);
+        padding: 20px;
+        
+    }
+    .card p::first-line{
+        font-size: 60px;
+    }
+    .card img {
+        
+    }
+    .card p{
+        
+        font-size: 40px;
+    }
 }

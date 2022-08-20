@@ -1,19 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 :root
 {
+    /* borders animation */
+   --container-width: 120px;
+    --container-height: calc(var(--container-width) * 2 / 3);
+
+    --rotation-figure-width: calc(var(--container-width) * 0.3);
+    --rotation-figure-height: calc(var(--container-width) * 1.5);
+
+    --rotation-figure-left: calc(-1 * var(--rotation-figure-width));
+    --rotation-figure-top: calc(-1 * (var(--rotation-figure-width) + calc(var(--rotation-figure-height) / 2)) );
+    
+    
+    /* portafolio */
+    --bar-color: white;
+    --container-color: rgba(32, 9, 32, 0.61);
+    --text-color: white;
+    --shadow-color: #91bece;
+    --background1:  linear-gradient(270deg,  rgb(32, 32, 95) , rgb(8, 3, 20));
+    --background2: linear-gradient(270deg,  rgb(14, 62, 90) , rgb(8, 3, 20));
+
+    --circle-1-color: rgba(230, 167, 72, 0.692);
+    --circle-2-color: rgba(72, 230, 85, 0.671);
+    --circle-3-color: rgb(230, 72, 72);
+    
+    
+    /* products tab */
     --product-width: 100px;
     --optional-background: linear-gradient(to bottom, rgb(199, 199, 199), rgb(199, 199, 199));
     --cards-background-color: rgb(3, 1, 26);
     --text-color: rgb(255, 255, 255);
     --card-width: 250px;
+    --card-height: 140px;
+
+    /* General */
+    --body-background: #1C1F25;
+    --footer-background: #151619;
 }
 body
 {
-    background-color: rgba(0, 255, 242, 0.507);;
+    background-color: var(--body-background);
     /* #1C1F25 */
-    /* 151619 */
+    /* #151619 */
     /* background: linear-gradient(to right, rgba(255, 251, 0, 0.096), rgba(1, 1, 1, 0.336)); */
     overflow-x: hidden;
+
+    min-height: 720px;
+    
+    
 
     /* Evitar la selección de texto de un <body> elemento en todos los principales navegadores */
     -youbkit-touch-callout: none; /*iOS Safari*/
@@ -22,4 +56,48 @@ body
     -ms-user-select: none;        /* IE 10+ y Edge */
     user-select: none;            /* Versión sin prefijo,
                                 actualmente compatible con Chrome y Opera */
+}
+footer
+{
+  background-color: var(--footer-background);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 10px;
+  justify-content: space-between;
+  display: flex;
+
+  font-family: 'Nunito-black';
+  color:white;
+}
+footer a
+{
+  text-decoration: inherit;
+  color: inherit;
+}
+@font-face {
+  font-family: 'Nunito-ligth';
+  src: url('assets/fonts/NunitoSans-Light.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Nunito-regular';
+  src: url('assets/fonts/NunitoSans-Regular.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Nunito-bold';
+  src: url('assets/fonts/NunitoSans-Bold.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Nunito-black';
+  src: url('assets/fonts/NunitoSans-Black.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }

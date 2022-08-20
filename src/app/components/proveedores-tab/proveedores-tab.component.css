@@ -1,16 +1,28 @@
 *
 {
-    font-family: Arial;
-    font-size: larger;
-    color: white;
-    background-color: rgb(10, 3, 32);
+    /* font-family: Arial; */
+    font-family: 'Nunito-regular';
+
+    font-size: large;
+    color: rgb(230, 231, 231);
     
 }
-
-p
+.cont
 {
-    border-radius: 18px;
-    padding: 8px;
+    margin: 50px;
+    padding: 20px;
 
-    box-shadow: 10px 10px 20px 2px rgb(44, 44, 44);
+    border-radius: 30px;
+    
+    /* background-color: rgb(24, 92, 115); */
+    background: linear-gradient(90deg, rgb(11, 50, 63), rgba(24, 92, 115, 0) );
+    box-shadow: -1px -1px 20px 0 rgb(24, 92, 115);
+
+}
+@media (max-width: 720px)
+{
+    *
+    {
+        font-size: small;
+    }
 }
